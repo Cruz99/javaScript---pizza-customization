@@ -1,0 +1,249 @@
+/*COLORS
+table even (red) - rgb(204, 41, 0)
+*/
+
+html {
+	font-family: 'Aref Ruqaa', serif;
+}
+/* FLEX BOX FOR MAIN PAGE*/
+
+#flex-container-main {
+	display: -webkit-flex;
+	display: flex;
+	width: auto;
+	height: auto;
+}
+#flex-section-panel-left,
+#flex-section-panel-right,
+#flex-section-1,
+#flex-section-2 {
+	height: 1300px;
+}
+#flex-section-1 {
+	width: 45%;
+}
+#flex-section-2 {
+	width: 45%;
+}
+#flex-section-panel-left,
+#flex-section-panel-right {
+	width: 5%;
+}
+/* FLEX BOX FOR LEFT SIDE OF MAIN */
+
+#flex-container-main-left,
+#flex-container-main-right {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+}
+#flex-section-main-pizza,
+#flex-section-main-extra,
+#flex-section-main-drinks {
+	margin-left: 5%;
+	margin-top: 20px;
+	width: 90%;
+}
+#flex-section-main-pizza {
+	height: 600px;
+}
+#flex-section-main-extra {
+	height: 380px;
+}
+#flex-section-main-drinks {
+	height: 300px;
+}
+#flex-section-main-picture,
+#flex-section-main-order {
+	margin-left: 5%;
+	width: 90%;
+	height: 600px;
+	margin-top: -10px;
+}
+#flex-section-main-order {
+	height: 480px;
+	margin-top: 10px;
+}
+#picture-container {
+	margin-left: 10%;
+	/*border: solid 2px black;*/
+
+	width: 400px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+#pizza-picture-base,
+#pizza-picture-topping-salami,
+#pizza-picture-topping-mushrooms,
+#pizza-picture-topping-tomatoe,
+#pizza-picture-topping-bacon,
+#pizza-picture-topping-olives,
+#pizza-picture-topping-chili,
+#pizza-picture-topping-onion,
+#pizza-picture-topping-chicken,
+#size-picture {
+	margin-left: -1px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 390px;
+	position: relative;
+}
+#pizza-picture-base,
+#pizza-picture-topping-salami,
+#pizza-picture-topping-mushrooms,
+#pizza-picture-topping-tomatoe,
+#pizza-picture-topping-bacon,
+#pizza-picture-topping-olives,
+#pizza-picture-topping-chili,
+#pizza-picture-topping-onion,
+#pizza-picture-topping-chicken {
+	height: 390px;
+}
+#pizza-picture-topping-salami,
+#pizza-picture-topping-mushrooms,
+#pizza-picture-topping-tomatoe,
+#pizza-picture-topping-bacon,
+#pizza-picture-topping-olives,
+#pizza-picture-topping-chili,
+#pizza-picture-topping-onion,
+#pizza-picture-topping-chicken {
+	border: none;
+}
+#size-picture {
+	width: 400px;
+	height: 88px;
+	background-color: "";
+}
+#secton-with-picture {
+	width: 85%;
+	margin-left: 7%;
+}
+#pizza-picture-header {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+/*STYLE*/
+
+body {
+	width: 100%;
+	height: auto;
+}
+body:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/background.jpg");
+	width: 101%;
+	height: 1500px;
+	opacity: 0.7;
+	z-index: -1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#header,
+footer {
+	background-color: gray;
+	border: 1px solid black;
+	font-family: 'Coiny', cursive;
+	text-align: center;
+	position: relative;
+	margin-left: -1%;
+	width: 102%;
+}
+#header {
+	height: 40px;
+	margin-top: -5px;
+}
+.promotion-header {
+	padding-left: 100px;
+}
+/*TABLES*/
+
+#pizza-table {
+	border-collapse: collapse;
+	width: 99%;
+}
+#pizza-table td,
+#pizza-table th {
+	border: 1px solid black;
+	min-width: 70px;
+	margin-top: -2px;
+}
+#pizza-table tr:nth-child(even) {
+	background-color: rgba(204, 41, 0, 0.6);
+}
+#pizza-table-header {
+	background-color: rgb(204, 41, 0);
+	font-size: 23px;
+}
+#add-on-table,
+#drinks-table,
+#order-details {
+	margin-left: 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+.header-name {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: red;
+	border: 3px inset;
+	border-color: rgba(102, 51, 0, 0.7);
+	border-radius: 3px;
+	margin-right: 60%;
+	text-align: center;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: bold;
+}
+.section-container {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.section-container div {
+	margin-left: 10px;
+}
+.product-title {
+	color: green;
+	line-height: 3px;
+}
+.product-name {
+	font-size: 22px;
+	font-weight: bold;
+}
+.product-decription {
+	font-style: italic;
+}
+.table-pizza-price {
+	color: black;
+	font-size: 22px;
+}
+#pay-table {
+	font-size: 22px;
+	font-weight: bold;
+	max-width: 300px;
+	padding-bottom: 10px;
+}
+.pay-section {
+	display: inline-block;
+	margin-right: 45px;
+}
+ #submit-button {
+	 font-size: 25px;
+ }
+footer {
+	height: 120px;
+}
+footer h1 {
+	width: 30%;
+}
