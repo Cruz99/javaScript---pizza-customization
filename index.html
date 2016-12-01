@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+    <title>Form - Pawel Gorski</title>
+    <script src="js/calculate.js"></script>
+</head>
+<body >
+<header>
+    <h2 id = "header"> Customize your own pizza </h2>
+    <h2 class="promotion-header">10% Discount for CIT members</h2>
+    <h3 class="promotion-header">*type your CIT email to receive the discount</h3>
+</header>
+<main>
+    <form method = "post" name = "myForm" action = "http://atlantis.cit.ie/displayvalues.php">
+        <div id = "flex-container-main">
+            <div id = "flex-section-panel-left">
+            </div>
+            <div id = "flex-section-1">
+                <div id = "flex-container-main-left" >
+                    <div id = "flex-section-main-pizza" class = "section-container">
+                        <div>
+                            <h2 class = "header-name">Pizza</h2>
+                            <table id = "pizza-table" >
+                                <tr id = "pizza-table-header">
+                                    <th>Type</th>
+                                    <th>Small</th>
+                                    <th>Medium</th>
+                                    <th>Large</th>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">Margherita</p>
+                                        <p class = "product-decription">Extra cheese and mushrooms</p>
+                                    </td>
+                                    <td><input type = "radio" id = "margherita-small" class = "margherita" name = "margherita-small" value = "6"><label class = "table-pizza-price">6.00&euro;</label> </td>
+                                    <td><input type = "radio" id = "margherita-medium" class = "margherita"  name = "margherita-medium" value = "8"><label class = "table-pizza-price">8.00&euro;</label></td>
+                                    <td><input type = "radio" id = "margherita-large" class = "margherita" name = "margherita-large" value = "12"><label class = "table-pizza-price">12.00&euro;</label></td>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">The Meat Lover</p>
+                                        <p class = "product-decription">Cheese, Chicken, bacon, salami</p>
+                                    </td>
+                                    <td><input type = "radio" id = "meatlover-small" class = "meatlover" name = "meatlover-small" value = "8"><label class = "table-pizza-price">8.00&euro;</label></td>
+                                    <td><input type = "radio" id = "meatlover-medium" class = "meatlover" name = "meatlover-medium" value = "10"><label class = "table-pizza-price">10.00&euro;</label></td>
+                                    <td><input type = "radio" id = "meatlover-large" class = "meatlover" name = "meatlover-large" value = "14"><label class = "table-pizza-price">14.00&euro;</label></td>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">Pepperoni</p>
+                                        <p class = "product-decription">Extra pepperoni, bacon, cheese</p>
+                                    </td>
+                                    <td><input type = "radio" id = "pepperoni-small" class = "pepperoni" name = "pepperoni-small" value = "8"><label class = "table-pizza-price">8.00&euro;</label></td>
+                                    <td><input type = "radio" id = "pepperoni-medium" class = "pepperoni" name = "pepperoni-medium" value = "10"><label class = "table-pizza-price">10.00&euro;</label></td>
+                                    <td><input type = "radio" id = "pepperoni-large" class = "pepperoni"  name = "pepperoni-large" value = "14"><label class = "table-pizza-price">14.00&euro;</label></td>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">Chicago Thin Crust</p>
+                                        <p class = "product-decription">Spicy salami, spicy chicken, bacon,</p>
+                                        <p class = "product-decription">tomatoes, olives, cheese</p>
+                                    </td>
+                                    <td><input type = "radio" id = "chicago-small" class = "chicago" name = "chicago-small" value = "10"><label class = "table-pizza-price">10.00&euro;</label></td>
+                                    <td><input type = "radio" id = "chicago-medium" class = "chicago" name = "chicago-medium" value = "12"><label class = "table-pizza-price">12.00&euro;</label></td>
+                                    <td><input type = "radio" id = "chicago-large" class = "chicago" name = "chicago-large" value = "16"><label class = "table-pizza-price">16.00&euro;</label></td>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">Tomatoe Pie</p>
+                                        <p class = "product-decription">Extra tomatoes, peppers, cheese, olives</p>
+                                    </td>
+                                    <td><input type = "radio" id = "tomatoepie-small" class = "tomatoepie" name = "tomatoepie-small" value = "8"><label class = "table-pizza-price">8.00&euro;</label></td>
+                                    <td><input type = "radio" id = "tomatoepie-medium" class = "tomatoepie" name = "tomatoepie-medium" value = "10"><label class = "table-pizza-price">10.00&euro;</label></td>
+                                    <td><input type = "radio" id = "tomatoepie-large" class = "tomatoepie" name = "tomatoepie-large" value = "14"><label class = "table-pizza-price">14.00&euro;</label></td>
+                                </tr>
+                                <tr>
+                                    <td class = "product-title">
+                                        <p class = "product-name">Create your own !</p>
+                                        <p class = "product-decription">Please select imgredients</p>
+                                    </td>
+                                    <td><input type = "radio" id = "custom-small" class = "Custom" name = "custom-small" value = "4"><label class = "table-pizza-price">4.00&euro;</label></td>
+                                    <td><input type = "radio" id = "custom-medium" class = "Custom" name = "custom-medium" value = "6"><label class = "table-pizza-price">6.00&euro;</label></td>
+                                    <td><input type = "radio" id = "custom-large" class = "Custom" name = "custom-large" value = "10"><label class = "table-pizza-price">10.00&euro;</label></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id = "flex-section-main-extra" class = "section-container">
+                        <div>
+                            <h2 class = "header-name">Extras</h2>
+                            <table id ="add-on-table">
+                                <tr>
+                                    <td><input type = "checkbox" id = "salami" name = "salami" value= "2">Salami</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "mushrooms"  name = "mushrooms" value= "2">Mushrooms</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "tomatoe"  name = "tomatoe" value= "2">Tomatoe</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "bacon"  name = "bacon" value= "2">Bacon</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "olives"  name = "olives" value= "2">Olives</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "chili"  name = "chili" value= "2">Chili</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "onion"  name = "onion" value= "2">Onion</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "chicken"  name = "chicken" value= "2">Chicken</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id = "flex-section-main-drinks" class = "section-container">
+                        <div>
+                            <h2 class = "header-name">Drinks</h2>
+                            <table id = "drinks-table">
+                                <tr>
+                                    <td><input type = "checkbox" id = "coke" name = "Coke 1l" value= "2">Coke 1l</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox"  id = "fanta"  name = "Fanta 1l" value= "2">Fanta 1l</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "sprite"  name = "Sprite 1l" value= "2">Sprite 1l</td>
+                                    <td>2.00&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "still-water"  name = "Still Water 1l" value= "2.5">Still Water 1l</td>
+                                    <td>2.50&euro;</td>
+                                </tr>
+                                <tr>
+                                    <td><input type = "checkbox" id = "sparkling-water"  name = "Sparkling Water 1l" value= "2.5">Sparkling Water 1l</td>
+                                    <td>2.50&euro;</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "flex-section-2">
+                <div id = "flex-section-main-picture" class = "section-container">
+                    <div>
+                        <p id = "pizza-picture-header">Please select your pizza</p>
+                        <div id ="secton-with-picture">
+                            <div id = "picture-container">
+                                <div id = "pizza-picture-base">
+                                    <div id = "pizza-picture-topping-salami">
+                                        <div id = "pizza-picture-topping-mushrooms">
+                                            <div id = "pizza-picture-topping-tomatoe">
+                                                <div id = "pizza-picture-topping-bacon">
+                                                    <div id = "pizza-picture-topping-olives">
+                                                        <div id = "pizza-picture-topping-chili">
+                                                            <div id = "pizza-picture-topping-onion">
+                                                                <div id = "pizza-picture-topping-chicken">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "size-picture"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "flex-section-main-order" class = "section-container">
+                    <div>
+                        <p id = "order-js"></p>
+                        <h2 class = "header-name" id = "order-header-name">Order Details</h2>
+                        <p id ="before-discount"></p>
+                        <input type = "hidden" id = "discount" name = "discount" value = "0">
+                        <div id = "pay-table" >
+                            <label class = "pay-section">To pay: </label>
+                            <p id ="after-discount" class = "pay-section"></p>
+                        </div>
+                        <table id = "order-details">
+                            <tr>
+                                <td><label>Name:</label></td>
+                                <td><input type ="text" id = "name"  name = "firstname"  required pattern="[A-Za-z]+"  title = "Please use valid name" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Surname:</label></td>
+                                <td><input type ="text" id = "surname"  name = "lastname"  required pattern="[A-Za-z]+" title = "Please enter valid surname" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone Number:</label></td>
+                                <td><input type ="text" id = "phoneNumber"  name = "phone-number"  required pattern="[0-9]+" title = "0-9 please" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email:</label></td>
+                                <td><input type ="email" id = "email"  name = "email"  required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Address:</label></td>
+                                <td><textarea id = "address"  name = "address" cols = "30" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label>Comments:</label></td>
+                                <td><textarea id = "comments"  name = "comments" cols = "30" rows = "5"></textarea></td>
+                            </tr>
+                        </table>
+                        <button type = "submit" id = "submit-button">Order</button>
+                    </div>
+                    <div id = "discount-info-section">
+                    </div>
+                </div>
+            </div>
+            <div class = "flex-section-panel-right">
+            </div>
+        </div>
+    </form>
+</main>
+<footer>
+    <h1>Designed by Pawel Gorski</h1>
+    <script src="js/calculate.js"></script>
+</footer>
+</body>
+</html>
